@@ -37,14 +37,14 @@ namespace keymaster {
 
 namespace {
 
-constexpr char kPlatformVersionProp[] = "ro.build.version.release";
+constexpr char kPlatformVersionProp[] = "ro.keymaster.xxx.release";
 constexpr char kPlatformVersionRegex[] = "^([0-9]{1,2})(\\.([0-9]{1,2}))?(\\.([0-9]{1,2}))?";
 constexpr size_t kMajorVersionMatch = 1;
 constexpr size_t kMinorVersionMatch = 3;
 constexpr size_t kSubminorVersionMatch = 5;
 constexpr size_t kPlatformVersionMatchCount = kSubminorVersionMatch + 1;
 
-constexpr char kPlatformPatchlevelProp[] = "ro.build.version.security_patch";
+constexpr char kPlatformPatchlevelProp[] = "ro.keymaster.xxx.security_patch";
 constexpr char kPlatformPatchlevelRegex[] = "^([0-9]{4})-([0-9]{2})-[0-9]{2}$";
 constexpr size_t kYearMatch = 1;
 constexpr size_t kMonthMatch = 2;
